@@ -1,3 +1,14 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/hypeJunctionPro/Elgg3-hypeStripeSubscriptions/compare/1.1.0...1.1.1) (2018-07-09)
+
+
+### Bug Fixes
+
+* **events:** do not terminate event if sync fails ([1830a18](https://github.com/hypeJunctionPro/Elgg3-hypeStripeSubscriptions/commit/1830a18))
+* **lang:** add missing translation ([dc8dc56](https://github.com/hypeJunctionPro/Elgg3-hypeStripeSubscriptions/commit/dc8dc56))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/hypeJunctionPro/Elgg3-hypeStripeSubscriptions/compare/1.0.1...1.1.0) (2018-06-29)
 
