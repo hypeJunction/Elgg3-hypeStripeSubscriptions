@@ -4,6 +4,7 @@ namespace hypeJunction\Subscriptions\Stripe;
 
 use Elgg\Event;
 use hypeJunction\Subscriptions\SubscriptionPlan;
+use Psr\Log\LogLevel;
 
 class OnUpdateEvent {
 
@@ -31,9 +32,9 @@ class OnUpdateEvent {
 
 			$subs->exportPlan($entity);
 		} catch (\Exception $ex) {
-			register_error($ex->getMessage());
+			elgg_log($ex, LogLevel::ERROR);
 
-			return false;
+			register_error($ex->getMessage());
 		}
 
 	}
