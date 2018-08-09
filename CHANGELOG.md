@@ -1,3 +1,13 @@
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/hypeJunctionPro/Elgg3-hypeStripeSubscriptions/compare/1.1.1...1.1.2) (2018-08-09)
+
+
+### Bug Fixes
+
+* **source:** also check non-token stripe source ([8273069](https://github.com/hypeJunctionPro/Elgg3-hypeStripeSubscriptions/commit/8273069))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/hypeJunctionPro/Elgg3-hypeStripeSubscriptions/compare/1.1.0...1.1.1) (2018-07-09)
 

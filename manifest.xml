@@ -3,7 +3,7 @@
 
     <name>hypeStripeSubscriptions</name>
     <id>hypeStripeSubscriptions</id>
-    <version type="dist">1.1.1</version>
+    <version type="dist">1.1.2</version>
 
     <description>Stripe add-on for hypeSubscriptions</description>
     <category>access</category>
