@@ -22,16 +22,19 @@ class StripeRecurringPaymentGateway extends StripeGateway implements RecurringPa
 	 * @return ResponseBuilder
 	 */
 	public function subscribe(ElggUser $user, SubscriptionPlan $plan, array $params = []) {
-		$token = elgg_extract('stripe_token', $params);
+		$source = elgg_extract('stripe_source', $params);
+		if (!$source) {
+			$source = elgg_extract('stripe_token', $params);
+		}
 
-		if (!$token) {
+		if (!$source) {
 			return elgg_error_response(elgg_echo('subscriptions:stripe:error:payment_required'), REFERRER, ELGG_HTTP_BAD_REQUEST);
 		}
 
 		try {
 			$customer = $this->client->createCustomer($user);
 			$customer->sources->create([
-				'source' => $token,
+				'source' => $source,
 			]);
 
 			$subscription = $this->client->createSubscription([
