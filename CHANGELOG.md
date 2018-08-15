@@ -1,3 +1,13 @@
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/hypeJunctionPro/Elgg3-hypeStripeSubscriptions/compare/1.1.2...1.1.3) (2018-08-15)
+
+
+### Bug Fixes
+
+* **events:** do not terminate event sequence on stripe error ([ab7397a](https://github.com/hypeJunctionPro/Elgg3-hypeStripeSubscriptions/commit/ab7397a))
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/hypeJunctionPro/Elgg3-hypeStripeSubscriptions/compare/1.1.1...1.1.2) (2018-08-09)
 
