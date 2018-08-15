@@ -31,6 +31,6 @@ class OnSubscriptionCancelEvent {
 		$gateway = elgg()->{'subscriptions.gateways.stripe'};
 		/* @var $gateway \hypeJunction\Subscriptions\Stripe\StripeRecurringPaymentGateway */
 
-		return $gateway->cancel($entity, ['at_period_end' => $at_period_end]);
+		$gateway->cancel($entity, ['at_period_end' => $at_period_end]);
 	}
 }

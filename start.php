@@ -10,7 +10,7 @@ require_once __DIR__ . '/autoloader.php';
 return function () {
 	elgg_register_event_handler('init', 'system', function () {
 
-		$svc = elgg()->subscriptions;
+		$svc = \hypeJunction\Subscriptions\SubscriptionsService::instance();
 		/* @var $svc \hypeJunction\Subscriptions\SubscriptionsService */
 
 		$svc->registerGateway(elgg()->{'subscriptions.gateways.stripe'});
